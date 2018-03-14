@@ -1,4 +1,4 @@
-# Intro to Backend Development in Python
+# Blueprint Workshops: Intro to Backend Development in Python
 **Presented by: George Ke and Abhijeet Prasad**
 
 Hi there! Please do the following pre-reqs below before the workshop so we can get started right away! Feel free to message us if you have any issues. Also like our [Facebook Page](https://www.facebook.com/uwblueprint/) and check out our [website](https://www.uwblueprint.org/)!
