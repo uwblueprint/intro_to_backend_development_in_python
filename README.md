@@ -59,7 +59,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 		- `export FLASK_DEBUG=1`
 	- For Windows Users:
 		- `set FLASK_APP=app.py`
-		- `export FLASK_DEBUG=1`
+		- `set FLASK_DEBUG=1`
 		
 8. Run Flask: `flask run` 
 	- Alternative method: `python -m flask run`
