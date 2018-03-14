@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Blog</title>
+  </head>
+
+  <body>
+    <h1>George's Blog</h1>
+    <a href="/newpost">New Post</a>
+
+    {% for post in posts %}
+      <div>
+        <h2>
+          <a href="/blogpost/{{ post.id }}">{{ post.title }}</a>
+        </h2>
+        <pre>{{ post.body | truncate }}</pre>
+        <p>{{ post.date }}</p>
+      </div>
+    {% endfor %}
+
+  </body>
+</html>
