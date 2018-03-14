@@ -20,7 +20,7 @@ def blogpost(id=None):
     # get post with id from database
     return render_template('blogpost.html', post=posts[int(id)])
   elif request.method == 'POST':
-    # write form data to database
+    # write form data (request.form) to database
     print(request.form)
     return redirect('/')
 

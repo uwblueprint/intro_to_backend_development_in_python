@@ -10,9 +10,9 @@
     <h1>Write new post</h1>
     <form enctype='application/json' name="registerForm" action="/blogpost" method="post">
       <h2>Title</h2>
-      <input type="text" id="title" value="" />
+      <input type="text" cols="100" name="title" value="" />
       <h2>Body</h2>
-      <input type="text" id="body" value="" />
+      <textarea type="text" rows="20" cols="100" name="body" value=""></textarea>
       <br>
       <input type="submit" value="Post" />
     </form>
