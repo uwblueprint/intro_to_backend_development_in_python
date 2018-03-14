@@ -41,28 +41,27 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 		- Install easy_install
 		- Run same commands as above without "sudo"
 
-4. Create the virtual environment (Make sure you're in the root directory of this project)
-	- `cd starter`
-	- `virtualenv env`
+4. Create the virtual environment `virtualenv env` (Make sure you're in the root directory of this project)
 
-5. Activate your venv (Make sure you're in the `starter` directory)
-
+5. Activate your env 
 	- For MacOS or Linux users:
 		- `. env/bin/activate`
 	- For Ubuntu users:
-		- `source venv/bin/activate`
+		- `source env/bin/activate`
 	- For Windows users:
 		- `env\Scripts\activate`
 		
-6. Download required files. Run `pip install -r requirements.txt`
+6. Download the required dependencies. Run `pip install -r requirements.txt`
 
-7. Export `FLASK_APP` env variable
+7. Setting up flask environment variables
 	- For MacOS, Linux or Ubuntu users:
 		- `export FLASK_APP=app.py`
+		- `export FLASK_DEBUG=1`
 	- For Windows Users:
 		- `set FLASK_APP=app.py`
+		- `export FLASK_DEBUG=1`
 		
 8. Run Flask: `flask run` 
 	- Alternative method: `python -m flask run`
 	- You should see `Serving Flask app "app"`
-	- Go to your web browser and go to the url `127.0.0.1:5000`. You should see something interesting!
+	- Go to your web browser and go to the url `127.0.0.1:5000`.
