@@ -30,9 +30,9 @@ def index():
 def blogpost(id=None):
   if request.method == 'GET' and id is not None:
     # get post with id from database
-    posts = BlogPost.query.get(id)
-    print(posts)
-    return render_template('blogpost.html', post=posts)
+    post = BlogPost.query.get(id)
+    print(post)
+    return render_template('blogpost.html', post=post)
   elif request.method == 'POST':
     # write form data (request.form) to database
     post = BlogPost(title=request.form['title'], body=request.form['body'])
