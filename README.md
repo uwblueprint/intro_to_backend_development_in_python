@@ -13,7 +13,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 
 ## Set up
 
-1. Downloading the code
+1. Download the repository
 	- For Git
 		1. Install Git at https://git-scm.com/download
 		2. Open command line and run 
@@ -24,7 +24,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 		2. Download the zip of this repository and unzip
 		3. Open command line and cd into this directory.
 		
-2. Setting up Python (Rest of the setup is in command line and in the project directory)
+2. Set up Python (Rest of the setup is in command line and in the project directory)
 	1. Make sure Python 2.7.0 or higher is installed by running `python --version`
 		- If you don't have python go here: https://www.python.org/downloads/
 	2. Install pip
@@ -41,7 +41,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 		- Install easy_install
 		- Run same commands as above without "sudo"
 
-4. Creating the virtual environment (Make sure you're in the root directory of this project)
+4. Create the virtual environment (Make sure you're in the root directory of this project)
 	- `cd starter`
 	- `virtualenv env`
 
@@ -62,7 +62,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 	- For Windows Users:
 		- `set FLASK_APP=app.py`
 		
-8. Run Flask:`flask run`
+8. Run Flask: `flask run` 
 	- Alternative method: `python -m flask run`
-
-9. Go to your web browser and go to the url `127.0.0.1:5000`. You should see something interesting!
+	- You should see `Serving Flask app "app"`
+	- Go to your web browser and go to the url `127.0.0.1:5000`. You should see something interesting!
