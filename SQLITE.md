@@ -1,6 +1,6 @@
 ```py
 # import and create db
-from models import db
+from app import db
 db.create_all()
 
 from models import BlogPost
