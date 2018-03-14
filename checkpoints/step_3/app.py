@@ -20,3 +20,9 @@ def index():
   # get posts from database
   posts = BlogPost.query.all();
   return render_template('index.html', posts=posts)
+
+@app.route('/blogpost/<id>')
+def blogpost(id):
+  # get post with id from database
+  post = BlogPost.query.get(id)
+  return render_template('blogpost.html', post=post)
