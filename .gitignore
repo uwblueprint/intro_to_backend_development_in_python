@@ -105,4 +105,3 @@ ENV/
 *.swo
 *.swp
 
-app.sqlite

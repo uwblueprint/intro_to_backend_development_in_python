@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Blog</title>
+  </head>
+
+  <body>
+    <a href="/">Home</a>
+    <h1>{{ post.title }}</h1>
+
+    <article>
+      <div>
+        <pre>{{ post.body | truncate }}</pre>
+        <p>{{ post.date }}</p>
+      </div>
+    </article>
+
+  </body>
+</html>

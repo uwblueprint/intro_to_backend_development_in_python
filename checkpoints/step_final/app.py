@@ -21,7 +21,6 @@ from models import BlogPost
 def index():
   # get posts from database
   posts = BlogPost.query.all();
-  print(posts)
   return render_template('index.html', posts=posts)
 
 @app.route('/blogpost', methods=['POST'])
@@ -30,7 +29,6 @@ def blogpost(id=None):
   if request.method == 'GET' and id is not None:
     # get post with id from database
     post = BlogPost.query.get(id)
-    print(post)
     return render_template('blogpost.html', post=post)
   elif request.method == 'POST':
     # write form data (request.form) to database

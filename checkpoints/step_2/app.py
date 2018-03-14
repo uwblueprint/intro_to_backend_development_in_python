@@ -1,4 +1,7 @@
-from flask import Flask
+from flask import (
+    Flask,
+    render_template,
+)
 import os
 from flask_sqlalchemy import SQLAlchemy
 
@@ -10,7 +13,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+from models import BlogPost
 
 @app.route('/')
 def index():
-    return 'What\'s poppin\'?'
+  # get posts from database
+  posts = BlogPost.query.all();
+  return render_template('index.html', posts=posts)
