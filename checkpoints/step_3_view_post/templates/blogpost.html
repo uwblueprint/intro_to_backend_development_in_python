@@ -3,18 +3,19 @@
 
   <head>
     <title>My Blog</title>
+    <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='styles.css') }}" rel="stylesheet">
   </head>
 
   <body>
     <a href="/">Home</a>
-    <h1>{{ post.title }}</h1>
+    <h1 class="title">{{ post.title }}</h1>
 
     <article>
       <div>
+        <p class="date">{{ post.date }}</p>
         <pre>{{ post.body | truncate }}</pre>
-        <p>{{ post.date }}</p>
       </div>
     </article>
-
   </body>
 </html>

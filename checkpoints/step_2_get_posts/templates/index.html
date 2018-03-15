@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
-
   <head>
-    <title>My Blog</title>
+    <title>Blog</title>
+    <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='styles.css') }}" rel="stylesheet">
   </head>
 
   <body>
-    <h1>The Blog</h1>
-    <a href="/newpost">New Post</a>
-
-    {% for post in posts %}
-      <div>
-        <h2>
-          <a href="/blogpost/{{ post.id }}">{{ post.title }}</a>
-        </h2>
-        <pre>{{ post.body | truncate }}</pre>
-        <p>{{ post.date }}</p>
+      <h1 class="blogTitle">The Blog</h1>
+      <div class="newPost">
+        <a href="/newpost">New Post</a>
       </div>
-    {% endfor %}
 
+      {% for post in posts %}
+        <div class="post">
+          <h2 class="title">
+            <a href="/blogpost/{{ post.id }}">{{ post.title }}</a>
+          </h2>
+          <pre>{{ post.body | truncate }}</pre>
+          <p>{{ post.date }}</p>
+        </div>
+      {% endfor %}
   </body>
 </html>

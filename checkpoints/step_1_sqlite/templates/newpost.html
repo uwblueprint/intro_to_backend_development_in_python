@@ -3,18 +3,19 @@
 
   <head>
     <title>My Blog</title>
+    <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='styles.css') }}" rel="stylesheet">
   </head>
 
   <body>
     <a href="/">Home</a>
-    <h1>Write new post</h1>
-    <form enctype='application/json' name="registerForm" action="/blogpost" method="post">
-      <h2>Title</h2>
-      <input type="text" cols="100" name="title" value="" />
-      <h2>Body</h2>
-      <textarea type="text" rows="20" cols="100" name="body" value=""></textarea>
+    <form name="registerForm" action="/blogpost" method="post">
+      <h2 class="newPostTitle">Title</h2>
+      <input class="titleInput" type="text" name="title" value="" />
+      <h2 class="newPostTitle">Body</h2>
+      <textarea type="text" rows="12" name="body" value=""></textarea>
       <br>
-      <input type="submit" value="Post" />
+      <input class="submit btn btn-success" type="submit" value="Post!" />
     </form>
   </body>
 </html>
