@@ -1,8 +1,8 @@
 from flask import (
   Flask,
+  redirect,
   render_template,
   request,
-  redirect,
 )
 import os
 from flask_sqlalchemy import SQLAlchemy
