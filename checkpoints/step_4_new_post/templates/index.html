@@ -16,8 +16,8 @@
           <h2 class="title">
             <a href="/blogpost/{{ post.id }}">{{ post.title }}</a>
           </h2>
-          <pre>{{ post.body | truncate }}</pre>
-          <p>{{ post.date }}</p>
+          <pre class="postPreview">{{ post.body | truncate }}</pre>
+          <p>{{ post.date.strftime('%a. %b %y') }}</p>
         </div>
       {% endfor %}
   </body>
