@@ -19,7 +19,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 		2. Open command line and run 
 			- `git clone https://github.com/uwblueprint/intro_to_backend_development_in_python.git`
 			- `cd intro_to_backend_development_in_python`
-	- Download a zip 
+	- If you don't want to use Git, you can download a zip 
 		1. Click green button that says "Clone or download" on the right above this read me
 		2. Download the zip of this repository and unzip
 		3. Open command line and cd into this directory.
@@ -41,7 +41,7 @@ Hi there! Please do the following pre-reqs below before the workshop so we can g
 		- Install easy_install
 		- Run same commands as above without "sudo"
 
-4. Create the virtual environment `virtualenv env` (Make sure you're in the root directory of this project)
+4. Create the virtual environment by running `virtualenv env` (Make sure you're in the root directory of this project)
 
 5. Activate your env 
 	- For MacOS or Linux users:
