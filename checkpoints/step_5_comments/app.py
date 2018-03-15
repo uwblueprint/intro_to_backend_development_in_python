@@ -15,7 +15,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-from models import BlogPost
+from models import (
+  BlogPost,
+  BlogComment,
+)
 
 @app.route('/')
 def index():
@@ -40,3 +43,10 @@ def blogpost(id=None):
 @app.route('/newpost')
 def newpost():
   return render_template('newpost.html')
+
+@app.route('/newcomment/<blogpost_id>', methods=['POST'])
+def newcomment(blogpost_id):
+  post = BlogComment(comment=request.form['comment'], blogpost_id=blogpost_id)
+  db.session.add(post)
+  db.session.commit()
+  return redirect('/blogpost/{}'.format(blogpost_id))

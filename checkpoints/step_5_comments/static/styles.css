@@ -41,6 +41,15 @@ a:hover {
   margin-top: 20px;
 }
 
+.comment {
+  margin: 0px;
+}
+
+.commentDate {
+  margin-bottom: 35px;
+  font-size: 12px;
+}
+
 input[type=text] {
   width: 100%;
   font-size: 28px;
@@ -51,9 +60,30 @@ textarea {
   font-size: 15px;
 }
 
-pre {
+.postPreview {
   font-family: "Helvetica Neue";
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 100px;
+  font-size: 15px;
+}
+
+pre {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+article {
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 15px;
 }
